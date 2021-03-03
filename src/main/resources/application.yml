@@ -1,0 +1,19 @@
+#配置es
+spring:
+  elasticsearch:
+    rest:
+      uris: 127.0.0.1:9200 #配置节点地址数组
+  application:
+      name: search-service
+  redis:
+    database: 1
+    host: localhost
+    password: Dashuju.redis
+    pool:
+      max-active: 20
+      max-idle: 500
+      max-wait: -1
+      min-idle: 5
+    port: 6379
+    timeout: 6000
+
